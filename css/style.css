@@ -1,0 +1,22 @@
+
+#header2{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+  align-items: center;
+    flex-wrap: wrap;
+
+
+}
+.logo{
+    font-style: italic;
+    font-size: 3em;
+    line-height: 1;
+    flex: 1;          
+  
+       
+}
+.nav2{
+    display: flex;
+    justify-content: space-around;
+}
