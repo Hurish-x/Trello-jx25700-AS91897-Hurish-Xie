@@ -1,22 +1,43 @@
-
-#header2{
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
-  align-items: center;
-    flex-wrap: wrap;
-
-
+body{
+    margin: 0;
 }
-.logo{
-    font-style: italic;
-    font-size: 3em;
-    line-height: 1;
-    flex: 1;          
+#header1{
+    background-color:rgba(239, 232, 220);
+}
+.container{
+    display: flex;
+    align-items: center;
+    max-width:600px;    
+    margin: 0 auto;  
+    gap: 60px;  
+}
+
   
-       
+.logo img{
+    width: 150px;
+    height: 150px;
+    margin-left:50px;
+    margin: 0;
 }
-.nav2{
+.nav{
     display: flex;
-    justify-content: space-around;
+    gap: 30px;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    margin-right: 50px;
+}
+.nav a{
+    text-decoration: none;
+    color: rgb(2, 73, 47);
+}
+a {
+
+    transition: text-shadow 0.3s ease; 
+    
+}
+
+a:hover {
+
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); 
 }
