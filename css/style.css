@@ -2,15 +2,17 @@
 body{
     margin: 0;
 }
-.header1{
+header{
     background-color:rgba(239, 232, 220);
-    height: 140px;
+    height: 170px;
+    justify-content: center;
 }
 
 
 .container{
     display: flex;
     align-items: center;
+    justify-content: center;
     max-width:600px;    
     margin: 0 auto;  
     gap: 60px;  
@@ -18,15 +20,15 @@ body{
 
   
 .logo img{
-    width: 140px;
-    height: 140px;
+    width: 200px;
+    height: 170px;
     margin-left:50px;
     margin: 0;
 }
 .nav{
     display: flex;
     gap: 30px;
-    font-size: 30px;
+    font-size: 55px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     margin-right: 50px;
