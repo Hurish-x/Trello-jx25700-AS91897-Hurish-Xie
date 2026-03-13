@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+}
+.container{
+    background-color:rgba(239, 232, 220);
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+
+}
+.logo img{
+    width: 140px;
+    height: 140px;
+    margin-left:50px;
+    margin: 0;
+}

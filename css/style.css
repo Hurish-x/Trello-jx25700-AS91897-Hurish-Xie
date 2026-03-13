@@ -1,9 +1,13 @@
+
 body{
     margin: 0;
 }
-#header1{
+.header1{
     background-color:rgba(239, 232, 220);
+    height: 140px;
 }
+
+
 .container{
     display: flex;
     align-items: center;
@@ -14,8 +18,8 @@ body{
 
   
 .logo img{
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
     margin-left:50px;
     margin: 0;
 }
@@ -32,12 +36,12 @@ body{
     color: rgb(2, 73, 47);
 }
 a {
-
     transition: text-shadow 0.3s ease; 
-    
 }
-
 a:hover {
-
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); 
 }
+
+
+
+
