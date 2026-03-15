@@ -4,7 +4,7 @@ body{
 
 .container{
     background-color:rgba(239, 232, 220);
-    height: auto;
+    height: 140px;
     display: flex;
     align-items: center;
     margin: 0 auto;
@@ -12,26 +12,39 @@ body{
 
 }
 .logo img{
-    width: 220px;
-    height: 170px;
+    width: 170px;
+    height: 140px;
     margin-left:50px;
     margin: 0;
 }
 .headertext{
-    font-size: 90px;
-    font-family:'Courier New', Courier, monospace;
+    font-size: 55px;
+    font-family: 'Dancing Script', cursive;
     color: rgb(2, 73, 47);
+    margin-left: 25px;
+
 }
 nav{
     display: flex;
     gap: 30px;
-    font-size: 40px;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
     font-weight: bold;
-    margin-right: 50px;
+    
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color:rgba(239, 232, 220);
 }
+hr{
+    margin: 0;
+}
+
 nav a{
     text-decoration: none;
-    font-family:'Courier New', Courier, monospace;
-    color:grey
+    font-family: 'Courier New', Courier, monospace;
+    color:grey;
+    transition: text-shadow 0.3s ease;
+}
+nav a:hover {
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); 
 }
