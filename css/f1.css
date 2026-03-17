@@ -1,1 +1,25 @@
+footer{
+background-image: url('');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
 
+}
+.links{
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+    gap: 15px;
+}
+.copyright{
+    margin-left: auto;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+ div a {
+    text-decoration: none;
+    color: ;
+ }
