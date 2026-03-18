@@ -11,7 +11,10 @@ footer {
     align-items: center;
     
 }
-
+.page-container{
+    width: 1400px;
+    margin:  auto;
+}
 footer::before {
     content: "";
     background-image: url("../images/f.jpeg");
@@ -32,19 +35,21 @@ footer::before {
     gap: 20px;
     position: relative;
     margin-right: 30px;
+    font-size: 20px;
 }
 .copyright {
     text-align: right;
-    color:black;
+    color:whitesmoke;
 }
 .links {
     display: flex;
+    
     justify-content: flex-end;
     gap: 20px;
 }
 
 div a {
-    color:rgb(216, 218, 219) ;
+    color:whitesmoke ;
     font-weight: 500;
     transition: text-shadow 0.3s ease; 
    

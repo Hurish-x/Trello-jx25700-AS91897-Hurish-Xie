@@ -28,11 +28,12 @@ footer::before {
 
 .right {
     display: flex;
-    gap: 20px;
+    
     position: relative;
     margin-right: 30px;
     align-items: center;
     gap: 50px;
+    font-size: 20px;
 }
 .copyright {
     text-align: right;
@@ -43,7 +44,8 @@ footer::before {
     justify-content: space-between;
     gap: 20px;
     flex-direction: column;
-    font-family: ;
+    font-family:Italic ;
+    
     
 }
 

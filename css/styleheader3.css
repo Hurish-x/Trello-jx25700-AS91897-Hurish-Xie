@@ -2,7 +2,10 @@
 body{
     margin: 0;
 }
-
+.page-container{
+    width: 1400px;
+    margin:  auto;
+}
 header{
     display: flex;
     background-color: rgba(239, 232, 220);
