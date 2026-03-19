@@ -33,6 +33,7 @@ footer::before {
     margin-right: 30px;
     align-items: center;
     gap: 50px;
+    font-family: Italic;
 }
 .copyright {
     text-align: right;
@@ -43,7 +44,7 @@ footer::before {
     justify-content: space-between;
     gap: 20px;
     flex-direction: column;
-    font-family: ;
+    
     
 }
 
