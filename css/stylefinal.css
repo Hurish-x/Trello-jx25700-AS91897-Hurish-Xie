@@ -1,0 +1,124 @@
+/* this is the header part */
+.width-all{
+    width: 1400px;
+}
+body{
+    margin: 0;
+}
+.container{
+    background-color:rgba(239, 232, 220);
+    height: 110px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+
+}
+.logo img{
+    width: 150px;
+    height: 110px;
+    margin-left:50px;
+    margin: 0;
+}
+.headertext{
+    font-size: 55px;
+    font-family: 'Dancing Script', cursive;
+    font-style: italic;
+    color: rgb(2, 73, 47);
+    margin-left: 25px;
+
+}
+nav{
+    display: flex;
+    gap: 32px;
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color:rgba(239, 232, 220);
+}
+hr{
+    margin: 0;
+}
+
+nav a{
+    text-decoration: none;
+    font-family: 'Dancing Script', cursive;
+    color:rgb(128,0,0);
+    transition: text-shadow 0.3s ease;
+}
+nav a:hover {
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); 
+}
+/* index page */
+
+
+
+
+
+/* footer part */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+footer {
+    position: relative;
+    min-height: 200px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+footer::before {
+    content: "";
+    background-image: url("../images/f.jpeg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    margin-right: 30px;
+  
+    margin-top: auto;
+    margin-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.copyright {
+    text-align: right;
+    color:whitesmoke;
+}
+.links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    font-style: italic;
+    
+}
+
+div a {
+    color:whitesmoke ;
+    font-weight: 500;
+    transition: text-shadow 0.3s ease; 
+    text-decoration: none;
+  
+}
+
+a:hover {
+    text-shadow: 5px 5px 5px rgba(248, 248, 248, 0.3); 
+    font-weight: bold;  
+    font-size: 1.1em; 
+}
