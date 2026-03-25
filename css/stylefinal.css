@@ -7,7 +7,7 @@ body{
 }
 .container{
     background-color:whitesmoke;
-    height: 110px;
+    height: 50px;
     display: flex;
     align-items: center;
     margin: 0 auto;
@@ -15,17 +15,22 @@ body{
 
 }
 .logo img{
-    width: 150px;
-    height: 110px;
+    width: 140px;
+    height: 90px;
     margin-left:50px;
-    margin: 0;
+margin-top: 5px;
+    transform: translateX(-10px)
+      
+    
 }
 .headertext{
-    font-size: 55px;
+   
+    font-size: 35px;
     font-family: 'Dancing Script', cursive;
     font-style: italic;
     color: rgb(2, 73, 47);
-    margin-left: 25px;
+    transform: translateX(-30px);
+
 
 }
 nav{
@@ -36,10 +41,14 @@ nav{
     font-weight: bold;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-color:rgba(239, 232, 220);
+    background-color:whitesmoke;
 }
 hr{
+    border: none;
+    height: 0.5px;
+    background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.3), transparent);
     margin: 0;
+
 }
 
 nav a{
@@ -47,9 +56,11 @@ nav a{
     font-family: 'Dancing Script', cursive;
     color: rgb(2, 73, 47);
     transition: text-shadow 0.3s ease;
+    font-size :20px ;
 }
 nav a:hover {
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); 
+    font-weight: bold;
 }
 /* index page */
 .hero-box {
@@ -118,6 +129,7 @@ footer::before {
     background-repeat: no-repeat;
     background-position: center;
     z-index: -1;
+    
 }
 
 .right {
@@ -143,7 +155,7 @@ footer::before {
     
 }
 
-div a {
+.links a {
     color:rgb(2, 73, 47); ;
     font-weight: 500;
     transition: text-shadow 0.3s ease; 
@@ -151,7 +163,7 @@ div a {
   
 }
 
-a:hover {
+.links a:hover {
     text-shadow: 5px 5px 5px rgba(31, 30, 30, 0.3); 
     font-weight: bold;  
     font-size: 1.1em; 
