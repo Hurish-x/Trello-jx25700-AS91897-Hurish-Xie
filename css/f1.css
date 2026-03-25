@@ -5,7 +5,7 @@
 }
 footer {
     position: relative;
-    min-height: 200px;
+    min-height: 180px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -14,7 +14,7 @@ footer {
 
 footer::before {
     content: "";
-    background-image: url("../images/f.jpeg");
+    background-image: url("../images/footerfinal.svg");
     position: absolute;
     top: 0;
     left: 0;
@@ -39,7 +39,7 @@ footer::before {
 }
 .copyright {
     text-align: right;
-    color:whitesmoke;
+    color:rgb(2, 73, 47);;
 }
 .links {
     display: flex;
@@ -50,7 +50,7 @@ footer::before {
 }
 
 div a {
-    color:whitesmoke ;
+    color:rgb(2, 73, 47); ;
     font-weight: 500;
     transition: text-shadow 0.3s ease; 
     text-decoration: none;
@@ -58,7 +58,7 @@ div a {
 }
 
 a:hover {
-    text-shadow: 5px 5px 5px rgba(248, 248, 248, 0.3); 
+    text-shadow: 5px 5px 5px rgba(31, 30, 30, 0.3); 
     font-weight: bold;  
     font-size: 1.1em; 
 }
