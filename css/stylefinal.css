@@ -1,3 +1,4 @@
+
 /* this is the header part */
 .width-all{
     max-width: 1400px;
@@ -7,7 +8,7 @@ body{
 }
 .container{
     background-color:whitesmoke;
-    height: 50px;
+    height: 65px;
     display: flex;
     align-items: center;
     margin: 0 auto;
@@ -16,7 +17,7 @@ body{
 }
 .logo img{
     width: 140px;
-    height: 90px;
+    height: 95px;
     margin-left:50px;
 margin-top: 5px;
     transform: translateX(-10px)
@@ -25,7 +26,7 @@ margin-top: 5px;
 }
 .headertext{
    
-    font-size: 35px;
+    font-size: 40px;
     font-family:'Cormorant Garamond', serif;
     font-weight: 500;
     font-style: italic;
@@ -34,7 +35,7 @@ margin-top: 5px;
 
 
 }
-nav{
+.header2 nav{
     display: flex;
     gap: 32px;
     font-size: 30px;
@@ -44,7 +45,7 @@ nav{
     flex-wrap: wrap;
     background-color:whitesmoke;
 }
-hr{
+.header2 hr{
     border: none;
     height: 0.5px;
     background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.3), transparent);
@@ -52,14 +53,14 @@ hr{
 
 }
 
-nav a{
+.header2 nav  a{
     text-decoration: none;
     font-family: 'Dancing Script', cursive;
     color: rgb(2, 73, 47);
     transition: text-shadow 0.3s ease;
-    font-size :20px ;
+    font-size :24px ;
 }
-nav a:hover {
+.header2 nav a:hover {
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); 
     font-weight: bold;
 }
@@ -98,30 +99,39 @@ nav a:hover {
             font-family: 'Cormorant Garamond', serif;
             font-size: 1.6em;
             color:rgb(2, 73, 47);
+             padding-top: 20px;
+             padding-bottom: 10px;
             
         }
     .about-content{
         padding:0px 30px 15px 30px;
         text-align: center;
+        font-size: 17px;
     }
 .intro{
     background-color: whitesmoke;
+   
 }
 .why{
+    padding-top: 40px;
+    padding-bottom: 60px;
     display: flex;
     background-color: whitesmoke;
     flex-wrap: wrap;
     gap:10px;
-    margin-bottom:40px ;
+   
     
 }
+
+
+
 #whytitle{
     flex:0 0 100%;
     text-align: center;
    font-family:  'Cormorant Garamond', serif;
    color:rgb(2, 73, 47);
    font-size:  1.6em;
-   
+   padding-bottom: 20px;
 
 }
 .why div:not(#whytitle){
@@ -137,6 +147,7 @@ nav a:hover {
 .why div p{
     padding: 20px;
     font-family: 'Open Sans', sans-serif;
+    text-align: center;
 }
 .land{
     
@@ -145,6 +156,7 @@ nav a:hover {
     box-shadow:
       inset 4px 4px 8px rgba(0, 0, 0, 0.2),   
       inset -4px -4px 8px rgba(255, 255, 255, 0.7);
+      margin: 0 25px 0 25px;
     }
 
 .outdoor{
@@ -160,19 +172,73 @@ nav a:hover {
     box-shadow:
       inset 4px 4px 8px rgba(0, 0, 0, 0.2),  
       inset -4px -4px 8px rgba(255, 255, 255, 0.7);
+      margin: 0 25px 0 25px;
 }
+/* destination page*/
+.destinationmain{
+    background-color: whitesmoke;
+    padding:30px;
+
+}
+
+.map-links{
+    display: flex;
+   
+   border: 1px solid  rgb(2, 73, 47);
+   align-items: center;
+   justify-content: space-between;
+}
+.desleft{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+   transform: translateX(150px);
+    
+}
+
+.map-links h3{
+    text-align: center;
+}
+.desleft a{
+    text-decoration: none;
+    color: rgb(2, 73, 47);
+    font-family:'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 30px;
+   
+}
+.desleft  a:hover {
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); 
+    font-weight: bold;
+    font-size: 32px;
+}
+.map img{
+    width: 600px;
+    height:400px;
+   padding: 10px;
+    
+}
+
+
+
+
 /* footer part */
 * {
     margin: 0;
-    padding: 0;
+   
     box-sizing: border-box;
+    
 }
 footer {
+  
     position: relative;
     min-height: 180px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+  
     
 }
 
@@ -195,13 +261,13 @@ footer::before {
 .right {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     position: relative;
     margin-right: 30px;
-  
     margin-top: auto;
     margin-bottom: 10px;
     font-family: 'Courier New', Courier, monospace;
+    transform: translateY(-25px);
 }
 .copyright {
     text-align: right;
