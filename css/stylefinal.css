@@ -1,6 +1,6 @@
 /* this is the header part */
 .width-all{
-    width: 1400px;
+    max-width: 1400px;
 }
 body{
     margin: 0;
@@ -26,7 +26,8 @@ margin-top: 5px;
 .headertext{
    
     font-size: 35px;
-    font-family: 'Dancing Script', cursive;
+    font-family:'Cormorant Garamond', serif;
+    font-weight: 500;
     font-style: italic;
     color: rgb(2, 73, 47);
     transform: translateX(-30px);
@@ -37,7 +38,7 @@ nav{
     display: flex;
     gap: 32px;
     font-size: 30px;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Cormorant Garamond', serif;
     font-weight: bold;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -66,7 +67,6 @@ nav a:hover {
 .hero-box {
         display: flex;
         position: relative; 
-        
         height: 400px;
         overflow: hidden;
        
@@ -86,22 +86,81 @@ nav a:hover {
         transform: translate(-50%, -50%);
         color: white;
         text-align: center; 
-        font-size: 2.5em;
-         font-family: 'Dancing Script', cursive;
+        font-size:50px;
+         font-family: 'Cormorant Garamond', serif;
         font-style: italic
+        
+        
     }
     
      .about{
             text-align: center;
-            font-family: 'Dancing Script', cursive;
-            font-style: italic
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.6em;
+            color:rgb(2, 73, 47);
+            
         }
     .about-content{
-        padding:10px 10px 10px 10px
+        padding:0px 30px 15px 30px;
+        text-align: center;
+    }
+.intro{
+    background-color: whitesmoke;
+}
+.why{
+    display: flex;
+    background-color: whitesmoke;
+    flex-wrap: wrap;
+    gap:10px;
+    margin-bottom:40px ;
+    
+}
+#whytitle{
+    flex:0 0 100%;
+    text-align: center;
+   font-family:  'Cormorant Garamond', serif;
+   color:rgb(2, 73, 47);
+   font-size:  1.6em;
+   
+
+}
+.why div:not(#whytitle){
+    flex: 1;
+}
+
+
+.why div h4{
+    text-align: center;
+    font-size: 1.1em;
+   
+}
+.why div p{
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+.land{
+    
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    box-shadow:
+      inset 4px 4px 8px rgba(0, 0, 0, 0.2),   
+      inset -4px -4px 8px rgba(255, 255, 255, 0.7);
     }
 
-
-
+.outdoor{
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    box-shadow:
+      inset 4px 4px 8px rgba(0, 0, 0, 0.2),  
+      inset -4px -4px 8px rgba(255, 255, 255, 0.7);
+}
+.Maori{
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    box-shadow:
+      inset 4px 4px 8px rgba(0, 0, 0, 0.2),  
+      inset -4px -4px 8px rgba(255, 255, 255, 0.7);
+}
 /* footer part */
 * {
     margin: 0;
@@ -129,6 +188,7 @@ footer::before {
     background-repeat: no-repeat;
     background-position: center;
     z-index: -1;
+  
     
 }
 
