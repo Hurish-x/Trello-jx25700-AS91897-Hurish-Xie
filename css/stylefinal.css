@@ -65,7 +65,9 @@ margin-top: 5px;
 .header2 nav a:hover {
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); 
     font-weight: bold;
+    font-size:25px ;
 }
+
 /* index page */
 .hero-box {
         display: flex;
@@ -144,6 +146,7 @@ margin-top: 5px;
 .why div h4{
     text-align: center;
     font-size: 1.1em;
+    color:rgb(2, 73, 47) ;
    
 }
 .why div p{
@@ -223,21 +226,50 @@ margin-top: 5px;
 }
 /* tips page */
 .tiptitle{
-    padding-top: 30px;
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    font-style: italic;
-     color: rgb(2, 73, 47);
-
+    font-family: 'Cormorant Garamond', serif;
+    color: rgb(2, 73, 47);
+    font-size: 2rem;
+    margin: 30px 0 25px;
 }
-.Tips{
-    width: fit-content;
-    margin: 20px auto;
-    text-align: left;
-    list-style-position: inside;
-    padding-left: 0;
-    font-size: 18px;
-    gap: 40px;
+
+.tips-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    padding: 0 20px;
+}
+
+.tip-card{
+    background-color: #f7f7f5;
+    border: 1px solid rgba(2, 73, 47, 0.22);
+    border-radius: 14px;
+    padding: 20px 22px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+}
+.tip-card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 10px 18px rgba(0,0,0,0.12);
+    border-color: rgba(2, 73, 47, 0.45);
+}
+
+.tip-number{
+    display: block;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(2, 73, 47);
+    margin-bottom: 10px;
+}
+
+.tip-card p{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #222;
 }
 .video-box{
     width: 700px;
@@ -254,6 +286,8 @@ margin-top: 5px;
             height: 315px;
             border: none;
         }
+
+
 
 
 
