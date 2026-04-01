@@ -34,19 +34,17 @@
 
 
 <main >
-    <section >
-        <article class="aklcard">
-            <a href="images/sky.jpg" data-fancybox="akl-gallery" data-caption="Sky Tower">
-                <img class="akl" src="images/sky.jpg" alt="Sky Tower" ></a>
-            
-            <a href="images/Waiheke.webp" data-fancybox="akl-gallery" data-caption="Waiheke Island"></a>
-            <a href="images/Rangitoto.png" data-fancybox="akl-gallery" data-caption="Rangitoto Island"></a>
-            <a href="images/Devonport.webp" data-fancybox="akl-gallery" data-caption="Devonport"></a>
-            <a href="images/Piha.webp" data-fancybox="akl-gallery" data-caption="Piha Beach"></a>
-            
-            
-        </article>
-    </section>
+<article class="aklcard">
+    <div class="gallery-preview">
+        <button class="preview-arrow preview-arrow-left" type="button" aria-label="Previous image">&#10094;</button>
+
+        <a href="images/sky.jpg" class="preview-link" id="previewLink">
+            <img src="images/sky.jpg" alt="Sky Tower" id="previewImage">
+        </a>
+
+        <button class="preview-arrow preview-arrow-right" type="button" aria-label="Next image">&#10095;</button>
+    </div>
+</article>
 
 
 <section class="gallery-content">
@@ -147,8 +145,77 @@
 <script> 
 
  Fancybox.bind('[data-fancybox="akl-gallery"]', {}); 
+  
+const aklImages = [
+  {
+    src: "images/sky.jpg",
+    caption: "Sky Tower",
+    alt: "Sky Tower"
+  },
+  {
+    src: "images/Waiheke.webp",
+    caption: "Waiheke Island",
+    alt: "Waiheke Island"
+  },
+  {
+    src: "images/Rangitoto.png",
+    caption: "Rangitoto Island",
+    alt: "Rangitoto Island"
+  },
+  {
+    src: "images/Devonport.webp",
+    caption: "Devonport",
+    alt: "Devonport"
+  },
+  {
+    src: "images/Piha.webp",
+    caption: "Piha Beach",
+    alt: "Piha Beach"
+  }
+];
 
-</script> 
+let currentIndex = 0;
+
+const previewLink = document.getElementById("previewLink");
+const previewImage = document.getElementById("previewImage");
+const leftArrow = document.querySelector(".preview-arrow-left");
+const rightArrow = document.querySelector(".preview-arrow-right");
+
+function updatePreview() {
+  const current = aklImages[currentIndex];
+  previewLink.href = current.src;
+  previewImage.src = current.src;
+  previewImage.alt = current.alt;
+}
+
+leftArrow.addEventListener("click", function () {
+  currentIndex = (currentIndex - 1 + aklImages.length) % aklImages.length;
+  updatePreview();
+});
+
+rightArrow.addEventListener("click", function () {
+  currentIndex = (currentIndex + 1) % aklImages.length;
+  updatePreview();
+});
+
+previewLink.addEventListener("click", function (e) {
+  e.preventDefault();
+
+  Fancybox.show(
+    aklImages.map(item => ({
+      src: item.src,
+      type: "image",
+      caption: item.caption
+    })),
+    {
+      startIndex: currentIndex
+    }
+  );
+});
+
+updatePreview();
+
+</script>
 </body>
 
 
