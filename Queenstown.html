@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rotorua</title>
+  <link rel="stylesheet" href="../css/stylefinal.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/logo.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
+</head>
+
+<body>
+<div class="width-all">
+
+  <header class="header2">
+    <div class="container">
+      <div class="logo"><img src="../images/logofinal.svg" alt="logo"></div>
+      <div class="headertext">Welcome to NZ</div>
+    </div>
+    <hr>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="destination.html">Destination</a>
+      <a href="tips.html">Travel Tips</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <article class="aklcard">
+      <div class="gallery-preview">
+        <button class="preview-arrow preview-arrow-left" type="button" aria-label="Previous image">&#10094;</button>
+
+        <a href="../images/skyline.jpeg" class="preview-link" id="previewLink">
+          <img src="../images/skyline.jpeg" alt="stretching paths" id="previewImage">
+        </a>
+
+        <button class="preview-arrow preview-arrow-right" type="button" aria-label="Next image">&#10095;</button>
+      </div>
+    </article>
+
+    <h2 class="gytitle">Dive Deeper into each destination</h2>
+
+    <section class="gallery-content">
+
+      <article class="gallery-item">
+        <div class="gallery-image">
+          <img src="../images/skyline.jpeg" alt="stretching roads">
+        </div>
+        <div class="gallery-text">
+          <h2>Skyline</h2>
+          <p>
+            Skyline Queenstown offers a scenic gondola ride to the top of Bob’s Peak, with panoramic views over Lake Wakatipu and the surrounding mountains. It also features the famous luge ride for a fun downhill experience.
+          </p>
+          <a href="https://queenstown.skyline.co.nz/" target="_blank">Read more</a>
+        </div>
+      </article>
+
+      <article class="reverse">
+        <div class="gallery-image">
+          <img src="../images/milford.jpeg" alt="lake and mountains">
+        </div>
+        <div class="gallery-text">
+          <h2>Milford Sound</h2>
+          <p>
+            Milford Sound is one of New Zealand’s most iconic natural attractions, known for its dramatic cliffs, waterfalls, and wildlife. It is often described as one of the most beautiful places in the world.
+          <a href="https://www.milford-sound.co.nz" target="_blank">Read more</a>
+        </div>
+      </article>
+
+      <article class="gallery-item">
+        <div class="gallery-image">
+          <img src="../images/jet.jpeg" alt="jet boat">
+        </div>
+        <div class="gallery-text">
+          <h2>Shotover Jet</h2>
+          <p>
+            Shotover Jet is a thrilling jet boat ride through narrow canyon walls at high speed. It is one of Queenstown’s most famous adventure experiences.
+        </p>
+          <a href="https://www.shotoverjet.com/" target="_blank">Read more</a>
+        </div>
+      </article>
+
+      <article class="reverse">
+        <div class="gallery-image">
+          <img src="../images/arrow.jpeg" alt="arrowtown">
+        </div>
+        <div class="gallery-text">
+          <h2>Arrowtown</h2>
+          <p>
+            Arrowtown is a historic gold mining town with charming streets, boutique shops, and beautiful autumn scenery. It offers a peaceful contrast to busy Queenstown.
+          </p>
+          <a href="https://www.arrowtown.com/" target="_blank">Read more</a>
+        </div>
+      </article>
+
+      <article class="gallery-item">
+        <div class="gallery-image">
+          <img src="../images/mountain.jpeg" alt="snow mountains">
+        </div>
+        <div class="gallery-text">
+          <h2>Lake Wakatipu</h2>
+          <p>
+           Lake Wakatipu is a stunning lake surrounded by mountains, forming the heart of Queenstown. It is perfect for relaxing walks, photography, and scenic views.
+          </p>
+           <a href="https://www.queenstownnz.co.nz/things-to-do/" target="_blank">Read more</a>
+        </div>
+      </article>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="right">
+      <div class="links">
+        <a href="#">Contact</a>
+        <a href="#">Privacy policy</a>
+        <a href="#">Follow US</a>
+      </div>
+
+      <div class="copyright">
+        © 2026 Hurish Xie. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+const galleryImages = [
+  {
+    src: "../images/skyline.jpeg",
+    alt: "streching roads"
+  },
+  {
+    src: "../images/milford.jpeg",
+    alt: "lake and mountains"
+  },
+  {
+    src: "../images/jet.jpeg",
+    alt: "jet boat"
+  },
+  {
+    src: "../images/arrow.jpeg",
+    alt: "arrowtown"
+  },
+  {
+    src: "../images/mountain.jpeg",
+    alt: "snow mountains"
+  }
+];
+
+let currentIndex = 0;
+
+const previewLink = document.getElementById("previewLink");
+const previewImage = document.getElementById("previewImage");
+const leftArrow = document.querySelector(".preview-arrow-left");
+const rightArrow = document.querySelector(".preview-arrow-right");
+
+function updatePreview() {
+  const current = galleryImages[currentIndex];
+  previewLink.href = current.src;
+  previewImage.src = current.src;
+  previewImage.alt = current.alt;
+}
+
+leftArrow.addEventListener("click", function () {
+  currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+  updatePreview();
+});
+
+rightArrow.addEventListener("click", function () {
+  currentIndex = (currentIndex + 1) % galleryImages.length;
+  updatePreview();
+});
+
+previewLink.addEventListener("click", function (e) {
+  e.preventDefault();
+
+  Fancybox.show(
+    galleryImages.map(item => ({
+      src: item.src,
+      type: "image",
+      caption: item.alt
+    })),
+    {
+      startIndex: currentIndex
+    }
+  );
+});
+
+updatePreview();
+</script>
+
+</body>
+</html>

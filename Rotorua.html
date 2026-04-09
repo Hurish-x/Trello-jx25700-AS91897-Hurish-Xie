@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auckland</title>
+    <link rel="stylesheet" href="../css/stylefinal.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/logo.png">
+   <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css"/> 
+<script src=" https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script> 
+</head>
+<body>
+<div class="width-all">
+
+    <header class="header2">
+        <div class="container">
+            <div class="logo"><img src="../images/logofinal.svg" alt="logo"></div>
+            <div class="headertext">Welcome to NZ</div>
+        </div>
+        <hr>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="destination.html">Destination</a>
+            <a href="tips.html">Travel Tips</a>
+        </nav>
+    </header>
+
+    <main>
+
+       
+        <article class="aklcard">
+            <div class="gallery-preview">
+                <button class="preview-arrow preview-arrow-left" type="button" aria-label="Previous image">&#10094;</button>
+
+                <a href="../images/Te-Puia.jpeg" class="preview-link" id="previewLink">
+                    <img src="../images/Te-Puia.jpeg" alt="Main preview image" id="previewImage">
+                </a>
+
+                <button class="preview-arrow preview-arrow-right" type="button" aria-label="Next image">&#10095;</button>
+            </div>
+        </article>
+
+        <h2 class="gytitle">
+     Dive Deeper into each destination
+       </h2>
+
+        <section class="gallery-content">
+
+            <article class="gallery-item">
+                <div class="gallery-image">
+                    <img src="../images/Te-Puia.jpeg" alt="bubbling mud pools">
+                </div>
+                <div class="gallery-text">
+                    <h2>Te Puia</h2>
+                    <p>
+                        Te Puia is one of Rotorua’s most famous geothermal parks, known for the powerful Pohutu Geyser and bubbling mud pools. It also offers Māori cultural experiences and traditional crafts.
+                    </p>
+                    <a href="https://www.tepuia.com/">Read more</a>
+                </div>
+            </article>
+
+            <article class="reverse">
+                <div class="gallery-image">
+                    <img src="../images/wonderland.jpeg" alt="iconic Champagne Pool">
+                </div>
+                <div class="gallery-text">
+                    <h2>Wai-O-Tapu Thermal Wonderland</h2>
+                    <p>
+                        Wai-O-Tapu is famous for its colourful geothermal features, including the iconic Champagne Pool and bright green lakes. It is one of the most visually unique places in Rotorua.
+                    </p>
+                    <a href="https://www.waiotapu.co.nz/">Read more</a>
+                </div>
+            </article>
+
+            <article class="gallery-item">
+                <div class="gallery-image">
+                    <img src="../images/volcanic.jpeg" alt="hot springs">
+                </div>
+                <div class="gallery-text">
+                    <h2>Waimangu Volcanic Valley</h2>
+                    <p>
+                       Waimangu is the world’s youngest geothermal valley, formed after a volcanic eruption. It features large hot springs, craters, and unique natural landscapes.
+                    </p>
+                    <a href="https://www.waimangu.co.nz/">Read more</a>
+                </div>
+            </article>
+
+            <article class="reverse">
+                <div class="gallery-image">
+                    <img src="../images/redwood.jpeg" alt="redwood">
+                </div>
+                <div class="gallery-text">
+                    <h2>Redwoods Whakarewarewa Forest</h2>
+                    <p>
+                       This forest is known for its tall redwood trees and peaceful walking tracks. It is a great place for nature walks, biking, and scenic photography.
+                    </p>
+                    <a href="https://www.treewalk.co.nz/">Read more</a>
+                </div>
+            </article>
+
+            <article class="gallery-item">
+                <div class="gallery-image">
+                    <img src="../images/spa.jpeg" alt="spa pool">
+                </div>
+                <div class="gallery-text">
+                    <h2>Polynesian Spa</h2>
+                    <p>
+                       Polynesian Spa is a popular place to relax in natural hot pools. It offers beautiful lake views and a calming experience after exploring Rotorua.
+                    </p>
+                    <a href="https://www.polynesianspa.co.nz/">Read more</a>
+                </div>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="right">
+            <div class="links">
+                <a href="#">Contact</a>
+                <a href="#">Privacy policy</a>
+                <a href="#">Follow US</a>
+            </div>
+
+            <div class="copyright">
+                © 2026 Hurish Xie. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<script>
+const galleryImages = [
+  {
+    src: "../images/Te-Puia.jpeg",
+    alt: "bubbling mud pools"
+  },
+  {
+    src: "../images/wonderland.jpeg",
+    alt: "iconic Champagne Pool"
+  },
+  {
+    src: "../images/volcanic.jpeg",
+    alt: "hot springs"
+  },
+  {
+    src: "../images/redwood.jpeg",
+    alt: "redwood"
+  },
+  {
+    src: "../images/spa.jpeg",
+    alt: "spa pools"
+  }
+];
+
+let currentIndex = 0;
+
+const previewLink = document.getElementById("previewLink");
+const previewImage = document.getElementById("previewImage");
+const leftArrow = document.querySelector(".preview-arrow-left");
+const rightArrow = document.querySelector(".preview-arrow-right");
+
+function updatePreview() {
+  const current = galleryImages[currentIndex];
+  previewLink.href = current.src;
+  previewImage.src = current.src;
+  previewImage.alt = current.alt;
+}
+
+leftArrow.addEventListener("click", function () {
+  currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+  updatePreview();
+});
+
+rightArrow.addEventListener("click", function () {
+  currentIndex = (currentIndex + 1) % galleryImages.length;
+  updatePreview();
+});
+
+previewLink.addEventListener("click", function (e) {
+  e.preventDefault();
+
+  Fancybox.show(
+    galleryImages.map(item => ({
+      src: item.src,
+      type: "image",
+      caption: item.alt
+    })),
+    {
+      startIndex: currentIndex
+    }
+  );
+});
+
+updatePreview();
+</script>
+
+</body>
+</html>
